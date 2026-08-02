@@ -1,0 +1,57 @@
+# Selenium Automation - Getting Data
+
+## Overview
+This project contains two Python scripts that use Selenium WebDriver to
+automate browser actions and extract data from websites:
+
+1. `google_search_automation.py` - opens Google, performs a search, and
+   extracts search result titles.
+2. `amazon_data_extraction.py` - opens Amazon, searches for a product, and
+   extracts product names/prices.
+
+## Requirements
+- Python 3.x installed
+- Google Chrome browser installed
+- Selenium library
+
+## Setup Instructions
+
+1. **Install Python dependencies**
+
+(If you have multiple Python versions, make sure to install it for the
+   same interpreter you'll use to run the scripts, e.g.
+   `/usr/local/bin/python3 -m pip install selenium`)
+
+2. **ChromeDriver**
+   Selenium needs a matching ChromeDriver for your installed Chrome version.
+   Selenium 4.6+ handles this automatically via Selenium Manager, so in most
+   cases no manual setup is needed.
+
+## How to Run
+
+Run each script from the terminal:
+
+
+A Chrome window will open automatically, perform the automated actions
+(search, click, refresh), and the extracted data will be printed in the
+terminal. The browser closes automatically at the end of each script.
+
+## What Each Script Does
+
+- Creates a WebDriver instance using `webdriver.Chrome()`
+- Opens the target website using `driver.get()`
+- Maximizes the browser window using `driver.maximize_window()`
+- Locates elements using `By.NAME`, `By.CLASS_NAME`, `By.LINK_TEXT`, `By.XPATH`
+- Types into the search box using `send_keys()`
+- Clicks elements using `.click()`
+- Waits for pages to load using `time.sleep()`
+- Refreshes the page using `driver.refresh()`
+- Extracts multiple elements using `find_elements()`
+- Prints extracted data to the console using `print()`
+- Closes the browser using `driver.quit()`
+
+## Notes / Learnings
+- (Add here: any errors you ran into while building this, e.g. the
+  ModuleNotFoundError for selenium, and how you fixed it)
+- (Add here: anything you had to adjust, like locator strings that didn't
+  work at first, or timing issues with time.sleep())
