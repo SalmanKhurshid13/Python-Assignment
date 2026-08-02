@@ -1,0 +1,165 @@
+# Python Chat Application
+
+## 📌 Project Overview
+
+This project is a simple **Python Chat Application** developed using **Socket Programming**. It enables communication between a client and a server over a local network. The application demonstrates two-way message exchange using TCP sockets.
+
+---
+
+## 🎯 Features
+
+- Server listens for incoming client connections.
+- Client connects to the server.
+- Two-way communication between client and server.
+- Messages are displayed on both client and server terminals.
+- Separate implementation for client and server.
+- Simple and easy-to-understand Python code.
+
+---
+
+## 📁 Project Structure
+
+```
+PythonChatApplication-SalmanKhurshid/
+│
+├── client.py
+├── server.py
+├── layout.py
+├── main.py
+└── README.md
+```
+
+---
+
+## 🛠 Technologies Used
+
+- Python 3.x
+- Socket Programming
+- Threading
+
+---
+
+## 🚀 How to Run
+
+### Step 1: Open the project folder
+
+Navigate to the project directory in your terminal.
+
+### Step 2: Start the Server
+
+```bash
+python server.py
+```
+
+Expected Output:
+
+```
+Server started on 127.0.0.1:5050
+Waiting for client...
+```
+
+---
+
+### Step 3: Start the Client
+
+Open a second terminal.
+
+Run:
+
+```bash
+python client.py
+```
+
+Expected Output:
+
+```
+Connected to Server
+```
+
+---
+
+### Step 4: Start Chatting
+
+Client:
+
+```
+Client: Hello
+```
+
+Server:
+
+```
+Client: Hello
+Server: Hi
+```
+
+Client:
+
+```
+Server: Hi
+```
+
+---
+
+## 📷 Sample Output
+
+```
+Server started on 127.0.0.1:5050
+Connected with ('127.0.0.1', 53092)
+
+Client: Hello Server
+Server: Hello Client
+```
+
+---
+
+## 📋 Project Files
+
+### server.py
+- Creates the server
+- Waits for client connections
+- Receives messages
+- Sends replies
+
+### client.py
+- Connects to the server
+- Sends messages
+- Receives replies
+
+### layout.py
+- Displays the application banner.
+
+### main.py
+- Provides project information and instructions.
+
+---
+
+## 💡 Concepts Used
+
+- Socket Programming
+- TCP/IP Communication
+- Client-Server Architecture
+- Threading
+- Message Encoding & Decoding
+
+---
+
+## 📖 Learning Outcomes
+
+After completing this project, I learned:
+
+- How socket programming works in Python.
+- How clients communicate with servers.
+- How to establish TCP connections.
+- How to send and receive data over a network.
+- How to build a basic real-time chat application.
+
+---
+
+## 👨‍💻 Author
+
+**Salman Khurshid**
+
+## 📄 License
+
+This project is created for educational purposes as part of a Python Socket Programming assignment.
