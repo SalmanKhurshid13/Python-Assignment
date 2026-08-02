@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Flask Registration Form</h2>
+
+<form action="/register" method="POST">
+
+<label>Name</label>
+<input type="text" name="name" required>
+
+<label>City</label>
+<input type="text" name="city" required>
+
+<label>Phone Number</label>
+<input type="text" name="phone" required>
+
+<button type="submit">
+Register
+</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
